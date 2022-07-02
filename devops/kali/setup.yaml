@@ -1,0 +1,56 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Install python3-venv
+    package:
+      name: python3-venv
+      state: present
+  - name: Install Bloodhound
+    package:
+      name: bloodhound
+      state: present
+  - name: Install FileZilla
+    package:
+      name: filezilla
+      state: present
+  - name: Install Remmina
+    package:
+      name: remmina
+      state: present
+  - name: Install Docker
+    package:
+      name: docker.io
+      state: present
+  - name: Install Gobuster
+    package: 
+      name: gobuster
+      state: present
+  - name: Install Seclists
+    package:
+      name: seclists
+      state: present
+  - name: Install Feroxbuster
+    package:
+      name: feroxbuster
+      state: present
+  - name: Install oscanner
+    package:
+      name: oscanner
+      state: present
+  - name: Install Redis Tools
+    package:
+      name: redis-tools
+      state: present
+  - name: Install sipvicious
+    package:
+      name: sipvicious 
+      state: present
+  - name: Install tnscmd10g
+    package:
+      name: tnscmd10g 
+      state: present  
+  - name: Install wkhtmltopdf
+    package:
+      name: wkhtmltopdf 
+      state: present
